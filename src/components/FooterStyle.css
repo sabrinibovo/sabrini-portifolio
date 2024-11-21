@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    background-color: #0d002b;
+    background-image: linear-gradient(316deg, #0d002b 0%, #3b033d 74%);
+}
+
+.footer-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.left {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.location {
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.location p {
+    line-height: 30px;
+}
+

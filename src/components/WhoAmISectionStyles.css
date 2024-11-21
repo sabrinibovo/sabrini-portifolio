@@ -1,0 +1,223 @@
+.whoami-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    height: 120vh;
+    padding: 5px;
+}
+
+.whoami-container h2 {
+    position: absolute;
+    transform: translate(-50%, -1%);
+    top: 15%;
+    left: 53%;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.whoami-box-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    transform: translate(-10%, -1%);
+    width: 70%;
+    max-height: 350px;
+}
+
+.whoami-box {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #1f0038, #3e0757, #540757);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    margin: 10px;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.whoami-box:hover {
+    transform: translateX(50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #1b0031, #5a176e);
+}
+
+.profile {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.profile img {
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    margin-top: 20%;
+}
+
+.profile-para p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.profile-para h3 {
+    position: relative;
+    text-align: center;
+    left: 10px;
+    padding: 20px;
+    margin-top: 1px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.whoami-box p {
+    text-align: justify;
+    width: 100%;
+    margin: 1%;
+    padding: 1px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: #fff;
+}
+
+.lang-flags {
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.lang-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flag-icon {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.lang-text {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 200;
+}
+
+@media (max-width: 1080px) {
+    .whoami-container {
+        grid-template-columns: 1fr;
+        height: 150vh;
+    }
+
+    .whoami-container h2 {
+        font-size: 3rem;
+        transform: translate(-60%, -40%);
+    }
+
+    .whoami-box-container {
+        display: flex;
+        transform: translate(5%, -30%);
+        width: 90%;
+    }
+
+    .whoami-box {
+        margin-top: 100%;
+        max-height: 400px;
+        margin: 20px;
+    }
+
+    .whoami-box:hover {
+        transform: none;
+        background: linear-gradient(45deg, #1f0038, #3e0757, #540757);
+    }
+
+    .profile img {
+        width: 100%;
+        max-width: 450px;
+        margin-top: 60%;
+    }
+
+    .profile-para p {
+        font-size: 1.4rem;
+        margin-top: 5%;
+    }
+
+    .profile-para h3 {
+        font-size: 1.9rem;
+        padding: 50px;
+        margin-top: 10%;
+    }
+
+    .lang-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .whoami-container {
+        height: 160vh;
+    }
+
+    .whoami-container h2 {
+        font-size: 2rem;
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+
+    .whoami-box {
+        padding: 5px;
+    }
+
+    .whoami-box-container {
+        transform: translate(1%, -20%);
+        width: 100%;
+    }
+
+    .profile-para h3 {
+        font-size: 1.5rem;
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+
+    .lang-text {
+        font-size: 1rem;
+    }
+
+    .whoami-box p {
+        font-size: 1rem;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .profile img {
+        max-width: 300px;
+    }
+
+    .profile-para p {
+        font-size: 1.1rem;
+    }
+
+    .whoami-box:hover {
+        transform: none;
+        background: linear-gradient(45deg, #1f0038, #3e0757, #540757);
+        ;
+    }
+
+}
